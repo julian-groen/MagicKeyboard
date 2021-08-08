@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A523C71269CB33900F122EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A523C70269CB33900F122EF /* AppDelegate.swift */; };
+		0A523C75269CB33B00F122EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A523C74269CB33B00F122EF /* Assets.xcassets */; };
+		0A523C87269CD93C00F122EF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A523C86269CD93C00F122EF /* main.swift */; };
+		0A529BDF26B9B0A000371FAF /* MagicKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A529BDD26B9B0A000371FAF /* MagicKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A529BE226B9B0A000371FAF /* MagicKeys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A529BDB26B9B0A000371FAF /* MagicKeys.framework */; };
+		0A529BE326B9B0A000371FAF /* MagicKeys.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A529BDB26B9B0A000371FAF /* MagicKeys.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A529BE726B9B0B400371FAF /* MagicKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A529BB126B9AF8A00371FAF /* MagicKeys.swift */; };
+		0A529BE926B9B3C900371FAF /* InternalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A529BE826B9B3C900371FAF /* InternalEvent.swift */; };
+		0A529BED26BC89AA00371FAF /* NSEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A529BEC26BC89AA00371FAF /* NSEvent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A529BE026B9B0A000371FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A523C65269CB33900F122EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A529BDA26B9B0A000371FAF;
+			remoteInfo = MagicKeys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A529BC426B9B03000371FAF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A529BE326B9B0A000371FAF /* MagicKeys.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A523C6D269CB33900F122EF /* MagicKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A523C70269CB33900F122EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A523C74269CB33B00F122EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A523C7C269CB33B00F122EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A523C86269CD93C00F122EF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0A529BB126B9AF8A00371FAF /* MagicKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicKeys.swift; sourceTree = "<group>"; };
+		0A529BDB26B9B0A000371FAF /* MagicKeys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MagicKeys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A529BDD26B9B0A000371FAF /* MagicKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MagicKeys.h; sourceTree = "<group>"; };
+		0A529BDE26B9B0A000371FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A529BE826B9B3C900371FAF /* InternalEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalEvent.swift; sourceTree = "<group>"; };
+		0A529BEC26BC89AA00371FAF /* NSEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSEvent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A523C6A269CB33900F122EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A529BE226B9B0A000371FAF /* MagicKeys.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A529BD826B9B0A000371FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A523C64269CB33900F122EF = {
+			isa = PBXGroup;
+			children = (
+				0A523C6F269CB33900F122EF /* MagicKeyboard */,
+				0A529BDC26B9B0A000371FAF /* MagicKeys */,
+				0A523C6E269CB33900F122EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A523C6E269CB33900F122EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A523C6D269CB33900F122EF /* MagicKeyboard.app */,
+				0A529BDB26B9B0A000371FAF /* MagicKeys.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A523C6F269CB33900F122EF /* MagicKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0A523C88269CDA1F00F122EF /* Support Files */,
+				0A523C74269CB33B00F122EF /* Assets.xcassets */,
+				0A523C70269CB33900F122EF /* AppDelegate.swift */,
+				0A523C7C269CB33B00F122EF /* Info.plist */,
+			);
+			path = MagicKeyboard;
+			sourceTree = "<group>";
+		};
+		0A523C88269CDA1F00F122EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A523C86269CD93C00F122EF /* main.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		0A529BDC26B9B0A000371FAF /* MagicKeys */ = {
+			isa = PBXGroup;
+			children = (
+				0A529BDD26B9B0A000371FAF /* MagicKeys.h */,
+				0A529BEC26BC89AA00371FAF /* NSEvent.swift */,
+				0A529BE826B9B3C900371FAF /* InternalEvent.swift */,
+				0A529BB126B9AF8A00371FAF /* MagicKeys.swift */,
+				0A529BDE26B9B0A000371FAF /* Info.plist */,
+			);
+			path = MagicKeys;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A529BD626B9B0A000371FAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A529BDF26B9B0A000371FAF /* MagicKeys.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A523C6C269CB33900F122EF /* MagicKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A523C80269CB33B00F122EF /* Build configuration list for PBXNativeTarget "MagicKeyboard" */;
+			buildPhases = (
+				0A523C69269CB33900F122EF /* Sources */,
+				0A523C6A269CB33900F122EF /* Frameworks */,
+				0A523C6B269CB33900F122EF /* Resources */,
+				0A529BC426B9B03000371FAF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A529BE126B9B0A000371FAF /* PBXTargetDependency */,
+			);
+			name = MagicKeyboard;
+			packageProductDependencies = (
+			);
+			productName = MagicKeyboard;
+			productReference = 0A523C6D269CB33900F122EF /* MagicKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A529BDA26B9B0A000371FAF /* MagicKeys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A529BE426B9B0A000371FAF /* Build configuration list for PBXNativeTarget "MagicKeys" */;
+			buildPhases = (
+				0A529BD626B9B0A000371FAF /* Headers */,
+				0A529BD726B9B0A000371FAF /* Sources */,
+				0A529BD826B9B0A000371FAF /* Frameworks */,
+				0A529BD926B9B0A000371FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicKeys;
+			productName = MagicKeys;
+			productReference = 0A529BDB26B9B0A000371FAF /* MagicKeys.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A523C65269CB33900F122EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					0A523C6C269CB33900F122EF = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+					0A529BDA26B9B0A000371FAF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 0A523C68269CB33900F122EF /* Build configuration list for PBXProject "MagicKeyboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A523C64269CB33900F122EF;
+			packageReferences = (
+			);
+			productRefGroup = 0A523C6E269CB33900F122EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A523C6C269CB33900F122EF /* MagicKeyboard */,
+				0A529BDA26B9B0A000371FAF /* MagicKeys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A523C6B269CB33900F122EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A523C75269CB33B00F122EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A529BD926B9B0A000371FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A523C69269CB33900F122EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A523C71269CB33900F122EF /* AppDelegate.swift in Sources */,
+				0A523C87269CD93C00F122EF /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A529BD726B9B0A000371FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A529BE926B9B3C900371FAF /* InternalEvent.swift in Sources */,
+				0A529BED26BC89AA00371FAF /* NSEvent.swift in Sources */,
+				0A529BE726B9B0B400371FAF /* MagicKeys.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A529BE126B9B0A000371FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A529BDA26B9B0A000371FAF /* MagicKeys */;
+			targetProxy = 0A529BE026B9B0A000371FAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A523C7E269CB33B00F122EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A523C7F269CB33B00F122EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		0A523C81269CB33B00F122EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2KC48ABXJN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MagicKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliangroen.MagicKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Debug;
+		};
+		0A523C82269CB33B00F122EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2KC48ABXJN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MagicKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliangroen.MagicKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Release;
+		};
+		0A529BE526B9B0A000371FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2KC48ABXJN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MagicKeys/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliangroen.MagicKeys;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A529BE626B9B0A000371FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2KC48ABXJN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MagicKeys/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.juliangroen.MagicKeys;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A523C68269CB33900F122EF /* Build configuration list for PBXProject "MagicKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A523C7E269CB33B00F122EF /* Debug */,
+				0A523C7F269CB33B00F122EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A523C80269CB33B00F122EF /* Build configuration list for PBXNativeTarget "MagicKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A523C81269CB33B00F122EF /* Debug */,
+				0A523C82269CB33B00F122EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A529BE426B9B0A000371FAF /* Build configuration list for PBXNativeTarget "MagicKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A529BE526B9B0A000371FAF /* Debug */,
+				0A529BE626B9B0A000371FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A523C65269CB33900F122EF /* Project object */;
+}
